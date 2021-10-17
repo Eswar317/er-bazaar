@@ -1,0 +1,933 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ER Bazzar</title>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script src="js/responsive-slider.js"></script>
+
+    <link href="css/responsive-slider.css" rel="stylesheet" media="screen">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="ericon.png" type="image/png">
+    <link rel="stylesheet" href="product.css">
+</head>
+<body onload="myFunction()">
+  <div id="loader"></div>
+    <div id="myDiv" class="animate-bottom">
+        <nav class="navbar">
+            <div class="container-fluid">
+              <div class="navbar-header" style="width: 100%;">
+                <img src="erlogo.png" style="float: left; width: 70px; height: 50px;">    
+                <a class="navbar-brand" style="font-weight: bold; font-size: 25px;" href="index.html">ER Bazaar</a>
+                <span style="font-size: 30px; cursor: pointer; float: right; margin-top: 10px;" onclick="openNav()" id="bar">&#9776;</span>
+                <ul class="nav navbar-nav" style="float: right;">
+                  <li><a style="border-radius: 20px;" href="index.html">Home</a></li>
+                  <li><a style="border-radius: 20px;" href="product.html">Products</a></li>
+                  <li><a style="border-radius: 20px;" href="#contact">Contact Us</a></li>
+                </ul>
+              </div>
+              <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" style="cursor: pointer;">&times;</a>
+                <a href="index.html">Home</a>
+                <a href="product.html">Products</a>
+                <a href="#contact">Contact Us</a>
+              </div>
+            </div>
+            <div class="container">
+            <div class="scrollmenu">
+              <a href="#fresh-produce">Fresh Produce</a>
+              <a href="#grains">Grains</a>
+              <a href="#meat">Meat/Protein</a>
+              <a href="#dairy">Dairy</a>
+              <a href="#baking goods">Baking Goods</a>
+              <a href="#freezer">Freezer</a>
+              <a href="#canned goods">Canned Goods</a>
+              <a href="#spices">Condiments/Spices</a>
+              <a href="#oils">Oils/Vinegars</a>
+              <a href="#snacks">Snacks</a>
+            </div>
+            </div>
+        </nav>
+
+
+    <div class="container-fluid" style="margin-top: -60px;">
+    <div id="fresh-produce"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Fresh-Produce<br>(Vegetables & Fruits)</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="apple.jpg" style="width:100%"><br><br>
+          <figcaption>Apples</figcaption>
+          </div>
+          <div id="img">
+          <img src="banana.jpg" style="width:100%"><br><br>
+          <figcaption>Bananas</figcaption>
+          </div>
+          <div id="img">
+          <img src="avocados.jpg" style="width:100%"><br><br>
+          <figcaption>Avocado</figcaption>
+          </div>
+          <div id="img">  
+          <img src="papaya.jpg" style="width:100%"><br><br>
+          <figcaption>Papaya</figcaption>
+          </div>
+          <div id="img">     
+          <img src="radish.jpg" style="width:100%"><br><br>
+          <figcaption>Radish</figcaption>
+          </div>
+          <div id="img">
+          <img src="turnip.jpg" style="width:100%"><br><br>
+          <figcaption>Turnip</figcaption>
+          </div>
+          <div id="img">
+          <img src="watermelon.jpg" style="width:100%"><br><br>
+          <figcaption>Watermelon</figcaption>
+          </div>
+          <div id="img">  
+          <img src="yams.jpg" style="width:100%"><br><br>
+          <figcaption>Yams</figcaption>
+          </div>
+        </div>  
+        <div class="column">
+          <div id="img">  
+          <img src="tomato.jpg" style="width:100%"><br><br>
+          <figcaption>Tomatoes</figcaption>
+          </div>
+          <div id="img">  
+          <img src="carrot.jpg" style="width:100%"><br><br>
+          <figcaption>Carrot</figcaption>
+          </div>
+          <div id="img">  
+          <img src="garlic.jpg" style="width:100%"><br><br>
+          <figcaption>Garlic</figcaption>
+          </div>
+          <div id="img">  
+          <img src="strawberry.jpg" style="width:100%"><br><br>
+          <figcaption>Strawberry</figcaption>
+          </div>
+          <div id="img">     
+          <img src="cucumber.jpg" style="width:100%"><br><br>
+          <figcaption>Cucumber</figcaption>
+          </div>
+          <div id="img">
+          <img src="egg plant.jpg" style="width:100%"><br><br>
+          <figcaption>Brinjal</figcaption>
+          </div>
+          <div id="img">
+          <img src="mango.jpg" style="width:100%"><br><br>
+          <figcaption>Mango</figcaption>
+          </div>
+          <div id="img">  
+          <img src="kiwi.jpg" style="width:100%"><br><br>
+          <figcaption>Kiwi Fruit</figcaption>
+        </div>
+        </div>  
+        <div class="column">
+          <div id="img">  
+          <img src="lemons.jpg" style="width:100%"><br><br>
+          <figcaption>Lemons</figcaption>
+          </div>
+          <div id="img">  
+          <img src="onion.jpg" style="width:100%"><br><br>
+          <figcaption>Onion</figcaption>
+          </div>
+          <div id="img">  
+          <img src="parsley.jpg" style="width:100%"><br><br>
+          <figcaption>Parsley</figcaption>
+          </div>
+          <div id="img">  
+          <img src="bellpepper.jpg" style="width:100%"><br><br>
+          <figcaption>Bell Peppers</figcaption>
+          </div>
+          <div id="img">     
+          <img src="orange.jpg" style="width:100%"><br><br>
+          <figcaption>Orange</figcaption>
+          </div>
+          <div id="img">
+          <img src="peaches.jpg" style="width:100%"><br><br>
+          <figcaption>Peaches</figcaption>
+          </div>
+          <div id="img">
+          <img src="pears.jpg" style="width:100%"><br><br>
+          <figcaption>Pears</figcaption>
+          </div>
+          <div id="img">  
+          <img src="pineapple.jpg" style="width:100%"><br><br>
+          <figcaption>Pineapple</figcaption>
+          </div>
+        </div>
+        <div class="column">
+          <div id="img">     
+          <img src="cilantro.jpg" style="width:100%"><br><br>
+          <figcaption>Cilantro</figcaption>
+          </div>
+          <div id="img">
+          <img src="potato.jpg" style="width:100%"><br><br>
+          <figcaption>Potatoes</figcaption>
+          </div>
+          <div id="img">
+          <img src="spinach.jpg" style="width:100%"><br><br>
+          <figcaption>Spinach</figcaption>
+          </div>
+          <div id="img">  
+          <img src="pumpkin.jpg" style="width:100%"><br><br>
+          <figcaption>Pumpkin</figcaption>
+          </div>
+          <div id="img">     
+          <img src="beans.jpg" style="width:100%"><br><br>
+          <figcaption>Beans</figcaption>
+          </div>
+          <div id="img">
+          <img src="broccoli.jpg" style="width:100%"><br><br>
+          <figcaption>Broccoli</figcaption>
+          </div>
+          <div id="img">
+          <img src="cabbage.jpg" style="width:100%"><br><br>
+          <figcaption>Cabbage</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cauliflower.jpg" style="width:100%"><br><br>
+          <figcaption>Cauliflower</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="grains"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Grains</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="amaranth.jpg" style="width:100%"><br><br>
+          <figcaption>Amaranth</figcaption>
+          </div>
+          <div id="img">
+          <img src="barley.jpg" style="width:100%"><br><br>
+          <figcaption>Barley</figcaption>
+          </div>
+          <div id="img">
+          <img src="brown rice.jpg" style="width:100%"><br><br>
+          <figcaption>Brown Rice</figcaption>
+          </div>
+        </div>  
+        <div class="column">
+          <div id="img">  
+          <img src="bulgur.jpg" style="width:100%"><br><br>
+          <figcaption>Bulgur</figcaption>
+          </div>
+          <div id="img">  
+          <img src="corn.jpg" style="width:100%"><br><br>
+          <figcaption>Corn</figcaption>
+          </div>
+          <div id="img">  
+          <img src="einkorn.jpg" style="width:100%"><br><br>
+          <figcaption>Einkorn</figcaption>
+          </div>
+        </div>  
+        <div class="column">
+          <div id="img">  
+          <img src="kamut.jpg" style="width:100%"><br><br>
+          <figcaption>Kamut</figcaption>
+          </div>
+          <div id="img">  
+          <img src="millet.jpg" style="width:100%"><br><br>
+          <figcaption>Millets</figcaption>
+          </div>
+          <div id="img">  
+          <img src="oats.jpg" style="width:100%"><br><br>
+          <figcaption>Oats</figcaption>
+          </div>
+        </div>
+        <div class="column">
+          <div id="img">     
+          <img src="sorghum.jpg" style="width:100%"><br><br>
+          <figcaption>Sorghum</figcaption>
+          </div>
+          <div id="img">
+          <img src="wheat.jpg" style="width:100%"><br><br>
+          <figcaption>Wheat</figcaption>
+          </div>
+          <div id="img">  
+          <img src="rye.jpg" style="width:100%"><br><br>
+          <figcaption>Rye</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="meat"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Meat / Proteins</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="chicken.jpg" style="width:100%"><br><br>
+          <figcaption>Chicken</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="mutton.jpg" style="width:100%"><br><br>
+          <figcaption>Mutton</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="kaadai.jpg" style="width:100%"><br><br>
+          <figcaption>Kaadai</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="egg.jpg" style="width:100%"><br><br>
+          <figcaption>Egg</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="dairy"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Dairy</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="powdered milk.jpg" style="width:100%"><br><br>
+          <figcaption>Powdered Milk</figcaption>
+          </div>
+          <div id="img">  
+          <img src="butter.jpg" style="width:100%"><br><br>
+          <figcaption>Butter</figcaption>
+          </div>
+          <div id="img">  
+          <img src="buttermilk.jpg" style="width:100%"><br><br>
+          <figcaption>ButterMilk</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cheese.jpg" style="width:100%"><br><br>
+          <figcaption>Cheese</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="cottage cheese.jpg" style="width:100%"><br><br>
+          <figcaption>Cottage Cheese</figcaption>
+          </div>
+          <div id="img">  
+          <img src="clotted cream.jpg" style="width:100%"><br><br>
+          <figcaption>Clotted Cream</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cream.png" style="width:100%"><br><br>
+          <figcaption>Cream</figcaption>
+          </div>
+          <div id="img">  
+          <img src="ghee.cms" style="width:100%"><br><br>
+          <figcaption>Ghee</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="goat milk.jpg" style="width:100%"><br><br>
+          <figcaption>Goat Milk</figcaption>
+          </div>
+          <div id="img">  
+          <img src="kefir.jpg" style="width:100%"><br><br>
+          <figcaption>Kefir</figcaption>
+          </div>
+          <div id="img">  
+          <img src="quark.jpg" style="width:100%"><br><br>
+          <figcaption>Quark</figcaption>
+          </div>
+          <div id="img">  
+          <img src="sour cream.jpg" style="width:100%"><br><br>
+          <figcaption>Sour Cream</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="viili.jpg" style="width:100%"><br><br>
+          <figcaption>Viili</figcaption>
+          </div>
+          <div id="img">
+          <img src="whipped cream.jpg" style="width:100%"><br><br>
+          <figcaption>Whipped Cream</figcaption>
+          </div>
+          <div id="img">
+          <img src="ymer.jpg" style="width:100%"><br><br>
+          <figcaption>Ymer</figcaption>
+          </div>
+          <div id="img">
+          <img src="yogurt.jpg" style="width:100%"><br><br>
+          <figcaption>Yogurt</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="baking goods"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Baking Goods</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="baking powder.webp" style="width:100%"><br><br>
+          <figcaption>Baking Powder</figcaption>
+          </div>
+          <div id="img">  
+          <img src="baking soda.jpg" style="width:100%"><br><br>
+          <figcaption>Baking Soda</figcaption>
+          </div>
+          <div id="img">  
+          <img src="sugar.jpg" style="width:100%"><br><br>
+          <figcaption>Sugar</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="brown sugar.jpg" style="width:100%"><br><br>
+          <figcaption>Brown Sugar</figcaption>
+          </div>
+          <div id="img">  
+          <img src="flour.jpg" style="width:100%"><br><br>
+          <figcaption>Flour</figcaption>
+          </div>
+          <div id="img">  
+          <img src="honey.jpg" style="width:100%"><br><br>
+          <figcaption>Honey</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="vanilla.jpg" style="width:100%"><br><br>
+          <figcaption>Vanilla</figcaption>
+          </div>
+          <div id="img">  
+          <img src="yeast.jpg" style="width:100%"><br><br>
+          <figcaption>Dry Yeast</figcaption>
+          </div>
+          <div id="img">  
+          <img src="chocolate.jpg" style="width:100%"><br><br>
+          <figcaption>Chocolate Chips</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="cocoa.jpg" style="width:100%"><br><br>
+          <figcaption>Cocoa Powder</figcaption>
+          </div>
+          <div id="img">
+          <img src="powdered sugar.jpg" style="width:100%"><br><br>
+          <figcaption>Powdered Sugar</figcaption>
+          </div>
+          <div id="img">
+          <img src="bread.jpg" style="width:100%"><br><br>
+          <figcaption>Bread</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="freezer"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Freezer</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="pie crust.jpg" style="width:100%"><br><br>
+          <figcaption>Pie Crust</figcaption>
+          </div>
+          <div id="img">  
+          <img src="hot dogs.jpg" style="width:100%"><br><br>
+          <figcaption>Hot Dogs</figcaption>
+          </div>
+          <div id="img">  
+          <img src="salad.jpg" style="width:100%"><br><br>
+          <figcaption>Salad Items</figcaption>
+          </div>
+          <div id="img">  
+          <img src="juice.jpg" style="width:100%"><br><br>
+          <figcaption>Juices</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="cookie.jpg" style="width:100%"><br><br>
+          <figcaption>Cookie Doughs</figcaption>
+          </div>
+          <div id="img">  
+          <img src="luncheon meat.jpg" style="width:100%"><br><br>
+          <figcaption>Luncheon Meats</figcaption>
+          </div>
+          <div id="img">  
+          <img src="baccon.jpg" style="width:100%"><br><br>
+          <figcaption>Baccon & Sausage</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cooldrinks.jpg" style="width:100%"><br><br>
+          <figcaption>Cooldrinks</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="hamburger.jpg" style="width:100%"><br><br>
+          <figcaption>Hamburger</figcaption>
+          </div>
+          <div id="img">  
+          <img src="ground meat.jpg" style="width:100%"><br><br>
+          <figcaption>Ground Meat</figcaption>
+          </div>
+          <div id="img">  
+          <img src="ham.jpg" style="width:100%"><br><br>
+          <figcaption>Ham</figcaption>
+          </div>
+          <div id="img">  
+          <img src="icecream.jpg" style="width:100%"><br><br>
+          <figcaption>Ice-Creams</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="pizza.jpg" style="width:100%"><br><br>
+          <figcaption>Pizza</figcaption>
+          </div>
+          <div id="img">
+          <img src="shrimp.jpg" style="width:100%"><br><br>
+          <figcaption>Shrimp</figcaption>
+          </div>
+          <div id="img">
+          <img src="puff.jpg" style="width:100%"><br><br>
+          <figcaption>Puff Pastry</figcaption>
+          </div>
+          <div id="img">  
+          <img src="coffee.gif" style="width:100%"><br><br>
+          <figcaption>Cold Coffee</figcaption>
+          </div>
+        </div>  
+    </div>
+
+
+    <div id="canned goods"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Canned / Dried Goods</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="canned tomatoes.jpg" style="width:100%"><br><br>
+          <figcaption>Canned Tomatoes</figcaption>
+          </div>
+          <div id="img">  
+          <img src="salsa.jpg" style="width:100%"><br><br>
+          <figcaption>Salsa</figcaption>
+          </div>
+          <div id="img">  
+          <img src="chicken broth.jpg" style="width:100%"><br><br>
+          <figcaption>Chicken stock / broth</figcaption>
+          </div>
+          <div id="img">  
+          <img src="walnut.jpg" style="width:100%"><br><br>
+          <figcaption>Walnuts</figcaption>
+          </div>
+          <div id="img">  
+          <img src="apricot.jpg" style="width:100%"><br><br>
+          <figcaption>Apricots</figcaption>
+          </div>
+          <div id="img">
+          <img src="pine nut.jpg" style="width:100%"><br><br>
+          <figcaption>Pine Nuts</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="jam.jpg" style="width:100%"><br><br>
+          <figcaption>Jam / Jelly</figcaption>
+          </div>
+          <div id="img">  
+          <img src="peanut.jpg" style="width:100%"><br><br>
+          <figcaption>Peanut Butter</figcaption>
+          </div>
+          <div id="img">  
+          <img src="pasta sauce.jpg" style="width:100%"><br><br>
+          <figcaption>Pasta Sauce</figcaption>
+          </div>
+          <div id="img">  
+          <img src="raisins.jpg" style="width:100%"><br><br>
+          <figcaption>Raisins</figcaption>
+          </div>
+          <div id="img">  
+          <img src="prune.jpg" style="width:100%"><br><br>
+          <figcaption>Prunes</figcaption>
+          </div>
+          <div id="img">
+            <img src="cantaloupe.jpg" style="width:100%"><br><br>
+            <figcaption>Cantaloupe</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="black beans.jpg" style="width:100%"><br><br>
+          <figcaption>Black Beans</figcaption>
+          </div>
+          <div id="img">  
+          <img src="soups.jpg" style="width:100%"><br><br>
+          <figcaption>Soups</figcaption>
+          </div>
+          <div id="img">  
+          <img src="tuna.jpg" style="width:100%"><br><br>
+          <figcaption>Tuna</figcaption>
+          </div>
+          <div id="img">  
+          <img src="aam papad.jpg" style="width:100%"><br><br>
+          <figcaption>Aam Papad</figcaption>
+          </div>
+          <div id="img">  
+          <img src="black berry.jpg" style="width:100%"><br><br>
+          <figcaption>Black Berry</figcaption>
+          </div>
+          <div id="img">  
+          <img src="anise.png" style="width:100%"><br><br>
+          <figcaption>Anise</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="almond.jpg" style="width:100%"><br><br>
+          <figcaption>Almonds</figcaption>
+          </div>
+          <div id="img">
+          <img src="cashew.jpg" style="width:100%"><br><br>
+          <figcaption>Cashew</figcaption>
+          </div>
+          <div id="img">
+          <img src="dates.jpg" style="width:100%"><br><br>
+          <figcaption>Dates</figcaption>
+          </div>
+          <div id="img">  
+          <img src="anjeer.jpg" style="width:100%"><br><br>
+          <figcaption>Anjeer</figcaption>
+          </div>
+          <div id="img">  
+          <img src="pistachios.jpg" style="width:100%"><br><br>
+          <figcaption>Pistachios</figcaption>
+          </div>
+          <div id="img">  
+          <img src="areca.jpg" style="width:100%"><br><br>
+          <figcaption>Areca Nuts</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="spices"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Condiments / Spices</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="black pepper.jpg" style="width:100%"><br><br>
+          <figcaption>Black Pepper</figcaption>
+          </div>
+          <div id="img">  
+          <img src="chilli powder.jpg" style="width:100%"><br><br>
+          <figcaption>Chilli Powder</figcaption>
+          </div>
+          <div id="img">  
+          <img src="chinnamon.jpg" style="width:100%"><br><br>
+          <figcaption>Chinnamon</figcaption>
+          </div>
+          <div id="img">  
+          <img src="crushed pepper.jpg" style="width:100%"><br><br>
+          <figcaption>Crushed Red Pepper</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cumin.jpg" style="width:100%"><br><br>
+          <figcaption>Cumin</figcaption>
+          </div>
+          <div id="img">
+          <img src="garlic powder.jpg" style="width:100%"><br><br>
+          <figcaption>Garlic Powder</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="ketchup.jpg" style="width:100%"><br><br>
+          <figcaption>Ketchup</figcaption>
+          </div>
+          <div id="img">  
+          <img src="mustard.jpg" style="width:100%"><br><br>
+          <figcaption>Mustard</figcaption>
+          </div>
+          <div id="img">  
+          <img src="nutmeg.jpg" style="width:100%"><br><br>
+          <figcaption>Nutmeg</figcaption>
+          </div>
+          <div id="img">  
+          <img src="paprika.jpg" style="width:100%"><br><br>
+          <figcaption>Paprika</figcaption>
+          </div>
+          <div id="img">  
+          <img src="salt.png" style="width:100%"><br><br>
+          <figcaption>Salt</figcaption>
+          </div>
+          <div id="img">
+          <img src="soy sauce.jpg" style="width:100%"><br><br>
+          <figcaption>Soy Sauce</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="steak sauce.jpg" style="width:100%"><br><br>
+          <figcaption>Steak Sauce</figcaption>
+          </div>
+          <div id="img">  
+          <img src="buffalo sauce.jpg" style="width:100%"><br><br>
+          <figcaption>Buffalo Sauce</figcaption>
+          </div>
+          <div id="img">  
+          <img src="salad dressings.jpg" style="width:100%"><br><br>
+          <figcaption>Salad Dressings</figcaption>
+          </div>
+          <div id="img">  
+          <img src="ginger.jpg" style="width:100%"><br><br>
+          <figcaption>Ginger</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cloves.jpg" style="width:100%"><br><br>
+          <figcaption>Cloves</figcaption>
+          </div>
+          <div id="img">  
+          <img src="chilly.jpg" style="width:100%"><br><br>
+          <figcaption>Chillies</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="caraway.jpg" style="width:100%"><br><br>
+          <figcaption>Caraway</figcaption>
+          </div>
+          <div id="img">
+          <img src="coriander.jpg" style="width:100%"><br><br>
+          <figcaption>Coriander</figcaption>
+          </div>
+          <div id="img">
+          <img src="fenugreek.jpg" style="width:100%"><br><br>
+          <figcaption>Fenugreek</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cardamom.jpg" style="width:100%"><br><br>
+          <figcaption>Cardamom</figcaption>
+          </div>
+          <div id="img">  
+          <img src="saffron.jpg" style="width:100%"><br><br>
+          <figcaption>Saffron</figcaption>
+          </div>
+          <div id="img">  
+          <img src="fennel.jpg" style="width:100%"><br><br>
+          <figcaption>Fennel</figcaption>
+          </div>
+        </div>  
+    </div>
+
+    <div id="oils"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Oils / Vinegars</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="apple cider.jpg" style="width:100%"><br><br>
+          <figcaption>Apple Cider Vinegar</figcaption>
+          </div>
+          <div id="img">  
+          <img src="balsamic.jpg" style="width:100%"><br><br>
+          <figcaption>Balsamic Vinegar</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="coconut.jpg" style="width:100%"><br><br>
+          <figcaption>Coconut Oil</figcaption>
+          </div>
+          <div id="img">  
+          <img src="olive.jpg" style="width:100%"><br><br>
+          <figcaption>Olive Oil</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="canola.jpg" style="width:100%"><br><br>
+          <figcaption>Vegetable / Canola Oil</figcaption>
+          </div>
+          <div id="img">  
+          <img src="red wine.jpg" style="width:100%"><br><br>
+          <figcaption>Red Wine Vinegar</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="white vinegar.jpeg" style="width:100%"><br><br>
+          <figcaption>White Vinegar</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cooking wine.jpg" style="width:100%"><br><br>
+          <figcaption>Cooking Wine</figcaption>
+          </div>
+        </div>  
+    </div>
+    <div id="snacks"></div>
+    <br><br><br><br>
+    <h1 style="text-align: center; font-weight: bold;">Snacks</h1>
+    <div class="row"> 
+        <div class="column">
+          <div id="img">  
+          <img src="creamy browny.jpg" style="width:100%"><br><br>
+          <figcaption>Creamy Brownies</figcaption>
+          </div>
+          <div id="img">  
+          <img src="quick oats.jpg" style="width:100%"><br><br>
+          <figcaption>Quick Oats</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="chip cookie.jpg" style="width:100%"><br><br>
+          <figcaption>Chocolate Chip Cookies</figcaption>
+          </div>
+          <div id="img">  
+          <img src="popcorn.jpg" style="width:100%"><br><br>
+          <figcaption>Popcorn</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="crackers.jpg" style="width:100%"><br><br>
+          <figcaption>Crackers</figcaption>
+          </div>
+          <div id="img">  
+          <img src="cereal.jpg" style="width:100%"><br><br>
+          <figcaption>Cereals</figcaption>
+          </div>
+        </div>
+        <div class="column">  
+          <div id="img">
+          <img src="nuts.jpg" style="width:100%"><br><br>
+          <figcaption>Nuts</figcaption>
+          </div>
+          <div id="img">  
+          <img src="tortilla chips.jpg" style="width:100%"><br><br>
+          <figcaption>Tortilla Chips</figcaption>
+          </div>
+        </div>  
+    </div>
+    </div>
+    <div id="contact"></div><br><br><br><br>
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>ER<span> Bazaar</span></h3>
+        <p class="footer-links">
+          <a href="index.html">Home</a>
+          ·
+          <a href="product.html">Products</a>
+          ·
+          <a href="#contact">Contact</a>
+        </p>
+        <p class="footer-company-name">ER Bazaar &copy; 2021</p>
+      </div>
+      <div class="footer-center">
+        <div>
+          <i class="fa fa-map-marker"></i>
+          <p><span>21A, Raja Desingh Street,</span> Villupuram, TamilNadu.</p>
+        </div>
+        <div>
+          <i class="fa fa-phone"></i>
+          <p> Call : <a href="tel:+916383961780"> +91 63839 61780 </a></p>
+        </div>
+        <div>
+          <i class="fa fa-envelope"></i>
+          <p><a href="mailto:support@erbazaar.com">contact@erbazaar.com</a></p>
+        </div>
+      </div>
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          ER Bazaar is a blog for Super Market.<br>
+        </p>
+        <div class="footer-icons">
+          <a href="https://www.facebook.com/profile.php?id=100068360466746" title="Facebook"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://instagram.com/eswarravichandran._?" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/eswarravi_?s=08" title="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/eswar-eswar-5b3466219" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Eswar317" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+
+      <div style="text-align: center; color: #92999f;">Website Designed by<span style="color: rgb(204, 18, 80);"><a href="https://eswar317.github.io/Eswar_Ravichandran/"> Eswar Ravichandran</a></span></div>
+    </footer>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+
+    </div>
+              
+    <script>
+    var mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    }
+    else {
+      mybutton.style.display = "none";
+    }
+    }
+              
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+    }
+    </script>
+
+
+    <script>
+      jQuery($ => {
+        const speed = 2000;
+
+        $('a[href*="#"]')
+        .filter((i,a) => a.getAttribute('href').startsWith('#') || a.href.startsWith('${location.href}#'))
+        .unbind('click.smoothScroll')
+        .bind('click.smoothScroll', event => {
+          const targetId = event.currentTarget.getAttribute('href').split('#')[1];
+          const targetElement = document.getElementById(targetId);
+
+          if(targetElement) {
+            event.preventDefault();
+            $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
+          }
+        });
+      });
+    </script>
+    
+    <script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "50%";
+    }
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+    
+    <script>
+    var myVar;
+    function myFunction() {
+      myVar = setTimeout(showPage, 2000);
+    }
+    function showPage() {
+      document.getElementById("loader").style.display = "none";
+      document.getElementById("myDiv").style.display = "block";
+    }
+    </script>
+
+</body>
+</html>
